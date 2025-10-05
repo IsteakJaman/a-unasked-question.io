@@ -17,4 +17,4 @@ function showButtons() {
 
 
 // Set a timeout to call the showButtons function after 10 seconds (10000 milliseconds)
-setTimeout(showButtons, 19000);
+setTimeout(showButtons, 18500);
