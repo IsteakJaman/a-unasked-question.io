@@ -1,0 +1,46 @@
+
+.background{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background:radial-gradient(ellipse at bottom, #0D1E31, #111) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /*this background will be at the most to*/
+  overflow: hidden;
+}
+.text-container {
+  display: inline-block;
+  font-size: 1.25em;
+  color:aqua; /*text color*/
+  z-index: 2;
+  position: relative;
+  right: 15%;
+  font-family: alkatra;
+}
+.last_text{
+  position: absolute;
+  align-items: center;
+  bottom: 12%;
+  right: 11%;
+  font-size: 50px;
+  color: crimson;
+  font-family: Alex Brush;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: opacity 0.5s ease-out, transform 1s ease-out;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+      background-size: contain; /* or any other style you prefer for smaller screens */
+  }
+}
+
+
+
+

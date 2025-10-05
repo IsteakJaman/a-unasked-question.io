@@ -1,0 +1,69 @@
+/* modal.css */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.modal-content {
+    width: auto;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px 30px 40px;
+     /* Change font size here */
+     /* Change font family here */
+    margin: auto;
+    opacity: 0; /* Set initial opacity to 0 for the slide-in effect */
+    animation: slideIn 1.2s forwards; /* Use CSS animation for the slide-in effect */
+}
+
+.close {
+    color: #000000; /* Black close icon color */
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff; /* White close icon color on hover/focus */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Define the CSS animation for the slide-in effect */
+@keyframes slideIn {
+    from {
+        transform: translate(-50%, -10%) translateY(-500px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+/* Add styling for modal messages */
+.modal-message {
+    color: #00ffff; /* Change text color here, for example, red */
+    font-size: 35px; /* Change font size here */
+    /* Add more styles as needed */
+    font-family: 'Akaya Kanadaka';
+    font-style: italic;
+    font-style: bold;
+}
